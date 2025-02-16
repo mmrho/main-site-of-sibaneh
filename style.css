@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('./assets/fonts/IRANSansWeb\(FaNum\).woff') format('woff');
+}
+
+body {
+    font-family: 'IRANSansWeb', Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    direction: rtl;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 100vh; /* This makes it responsive to viewport height */
+    height: auto; /* Allows content to expand naturally */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+@supports (-webkit-touch-callout: none) {
+    body {
+        padding-top: env(safe-area-inset-top);
+    }
+
+}
+
+@media (min-width: 300px) {
+    body {
+        font-size: 16px;
+    }
+
+}
