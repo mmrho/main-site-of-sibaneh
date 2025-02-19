@@ -24,7 +24,173 @@ body {
     justify-content: space-between;
 }
 
+/* Header Component */
+.site-header {
+  background-color: rgb(255, 255, 255);
+}
 
+/* Top Header Section */
+.site-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+/* Brand */
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-text, #333);
+    padding: 0.5rem 1rem;
+}
+
+.brand-logo {
+    max-height: 40px;
+    width: auto;
+}
+
+.brand-name {
+    margin: 0;
+    margin-right: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Search */
+.search {
+    position: relative;
+    flex: 0 1 1000px;
+}
+.search-input {
+    background-color: rgb(241, 240, 245);
+    width: 100%;
+    padding: 0.75rem 1rem;
+    padding-right: 40px; /* Make room for the icon */
+    border: 1px solid var(--color-border, #e2e8f0);
+    border-radius: 0.5rem;
+    transition: border-color 0.2s ease;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='20' height='20' viewBox='0 0 50 50'%3E%3Cpath d='M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+}
+.search-input:focus {
+    outline: none;
+    border-color: var(--color-primary, #3182ce);
+}
+
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-gray, #718096);
+}
+/* Auth Button */
+.auth-button {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+.auth-button:hover {
+    background-color: var(--color-gray-50, #f7fafc);
+}
+
+.auth-button-icon {
+    margin-left: 0.5rem;
+}
+.auth-button-text{
+    text-wrap: nowrap;
+}
+
+/*site-header-bottom*/
+.site-header-bottom{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+/* consultation Button */
+.consultation-button {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+.consultation-button:hover {
+    background-color: var(--color-gray-50, #f7fafc);
+}
+
+.consultation-button-icon {
+    margin-left: 0.5rem;
+}
+.consultation-button-text{
+    text-wrap: nowrap;
+}
+
+/* Navigation */
+.site-nav {
+    padding: 0.5rem 0;
+}
+
+.site-nav-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav-item {
+    margin: 0 0.75rem;
+}
+
+.site-nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-text, #333);
+    padding: 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.site-nav-link:hover {
+    color: var(--color-primary, #3182ce);
+}
+
+.site-nav-icon {
+    margin-left: 0.5rem;
+}
+
+/* service Button */
+.service-button {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    background:  linear-gradient(90deg, rgba(64, 159, 255) 0%, rgb(193, 66, 153) 40%,rgb(193, 66, 153) 60%, rgba(249, 100, 45) 100%) border-box;
+    border: none;
+    border-radius: 1rem;
+    background:-webkit-linear-gradient();
+    transition: all 0.2s ease;
+}
+
+.service-button:hover {
+    background-color: var(--color-gray-50, #f7fafc);
+}
+.service-button-text{
+    text-wrap: nowrap;
+}
 
 
 @supports (-webkit-touch-callout: none) {
