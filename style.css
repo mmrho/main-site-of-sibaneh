@@ -11,22 +11,30 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
 }
 
 .container {
     max-width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    min-height: 100vh; /* This makes it responsive to viewport height */
-    height: auto; /* Allows content to expand naturally */
+    width: 100%;
+    padding-left: 3px;
+    padding-right: 3px;
+    min-height: 100vh;
+    /* This makes it responsive to viewport height */
+    height: auto;
+    /* Allows content to expand naturally */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-x: hidden;
 }
 
-/* Header Component */
+/* site-header */
+
 .site-header {
-  background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 /* Top Header Section */
@@ -34,7 +42,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 0.75rem 1rem;
 }
 
 /* Brand */
@@ -63,11 +71,13 @@ body {
     position: relative;
     flex: 0 1 1000px;
 }
+
 .search-input {
     background-color: rgb(241, 240, 245);
     width: 100%;
     padding: 0.75rem 1rem;
-    padding-right: 40px; /* Make room for the icon */
+    padding-right: 40px;
+    /* Make room for the icon */
     border: 1px solid var(--color-border, #e2e8f0);
     border-radius: 0.5rem;
     transition: border-color 0.2s ease;
@@ -76,6 +86,7 @@ body {
     background-position: right 10px center;
     background-size: 20px;
 }
+
 .search-input:focus {
     outline: none;
     border-color: var(--color-primary, #3182ce);
@@ -88,6 +99,7 @@ body {
     transform: translateY(-50%);
     color: var(--color-gray, #718096);
 }
+
 /* Auth Button */
 .auth-button {
     display: flex;
@@ -105,18 +117,20 @@ body {
 .auth-button-icon {
     margin-left: 0.5rem;
 }
-.auth-button-text{
+
+.auth-button-text {
     text-wrap: nowrap;
 }
 
 /*site-header-bottom*/
-.site-header-bottom{
+.site-header-bottom {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 0.75rem 1rem;
 }
+
 /* consultation Button */
 .consultation-button {
     display: flex;
@@ -134,7 +148,8 @@ body {
 .consultation-button-icon {
     margin-left: 0.5rem;
 }
-.consultation-button-text{
+
+.consultation-button-text {
     text-wrap: nowrap;
 }
 
@@ -146,14 +161,16 @@ body {
 .site-nav-list {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
+    width: 100%;
+    max-width: 100%;
     padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .site-nav-item {
-    margin: 0 0.75rem;
+    flex: 0 1 auto;
+    white-space: nowrap;
 }
 
 .site-nav-link {
@@ -163,6 +180,12 @@ body {
     color: var(--color-text, #333);
     padding: 0.5rem;
     transition: color 0.2s ease;
+}
+
+.site-header-bottom {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
 }
 
 .site-nav-link:hover {
@@ -178,19 +201,154 @@ body {
     display: flex;
     align-items: center;
     padding: 0.75rem 1.25rem;
-    background:  linear-gradient(90deg, rgba(64, 159, 255) 0%, rgb(193, 66, 153) 40%,rgb(193, 66, 153) 60%, rgba(249, 100, 45) 100%) border-box;
+    background: linear-gradient(120deg, rgb(64, 159, 255) 0%, rgb(193, 66, 153) 40%, rgb(193, 66, 153) 60%, rgba(249, 100, 45) 100%) border-box;
     border: none;
     border-radius: 1rem;
-    background:-webkit-linear-gradient();
+    background: -webkit-linear-gradient();
     transition: all 0.2s ease;
 }
 
 .service-button:hover {
     background-color: var(--color-gray-50, #f7fafc);
 }
-.service-button-text{
+
+.service-button-text {
     text-wrap: nowrap;
 }
+
+/* site-main */
+
+/* hero-section */
+.hero-section {
+    max-width: 100%;
+
+}
+
+.hero-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: rgb(226, 243, 249);
+    z-index: -2;
+}
+
+.hero-section-container .logo {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+}
+
+.hero-section-container p {
+    margin: 0;
+    font-size: 0.58rem;
+}
+
+.hero-section-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 2.5rem; 
+    margin-bottom: 2.5rem;
+}
+
+.hero-section-container .subtitle {
+    font-size: 1.5rem;
+}
+
+.hero-section-container .learn-more {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    color: rgb(10, 96, 234);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section-container .learn-more:hover {
+    background-color: #2563EB;
+}
+
+.hero-section-container .phone-screenshot {
+    max-width: 100%;
+    height: 45rem;
+    margin-top: 2rem;
+}
+
+.wave-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#waveCanvas {
+    width: 100%;
+    height: 100%;
+}
+.phones-container {
+    position: relative;
+    height: 500px;
+    margin: 50px 0;
+}
+/* card-section */
+.card-section{
+    background-color: rgb(226, 243, 249);
+}
+.card-container{
+  padding: 20px;
+}
+.info-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.info-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn-custom {
+    background-color: #00a0e9;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.flags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.flag {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 
 
 @supports (-webkit-touch-callout: none) {
