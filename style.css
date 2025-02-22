@@ -320,7 +320,7 @@ body {
     height: 2rem;
 }
 .info-card-logo h6 {
-  font-size: 0.5rem;
+  font-size: 1rem;
   font-weight: lighter;
   margin-bottom: 0;
 }
@@ -335,6 +335,10 @@ body {
     font-size: 14px;
     color: #666;
     margin-bottom: 15px;
+}
+.info-card img {
+    width: 20rem;
+    height: 20rem;
 }
 
 .btn-appstore {
