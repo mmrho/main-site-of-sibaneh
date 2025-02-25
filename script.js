@@ -91,13 +91,13 @@ function prevSlide() {
 function startAutoplay() {
     slideInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
     isPlaying = true;
-    playBtn.innerHTML = '⏸';
+    playBtn.textContent = '||';
 }
 
 function stopAutoplay() {
     clearInterval(slideInterval);
     isPlaying = false;
-    playBtn.innerHTML = '▶';
+    playBtn.textContent = '▶';
 }
 
 function toggleAutoplay() {

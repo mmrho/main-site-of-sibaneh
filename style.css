@@ -408,6 +408,8 @@ body {
     transform: translateY(-50%);
     color: white;
     z-index: 2;
+    direction: ltr;
+    text-align: left;
 }
 
 .slide-content h1 {
@@ -431,6 +433,9 @@ body {
     font-weight: bold;
     display: inline-block;
 }
+.download-btn:hover {
+  opacity: 0.8;
+}
 
 .slide-bg {
     position: absolute;
@@ -447,7 +452,6 @@ body {
     display: flex;
     gap: 10px;
 }
-
 .nav-btn {
     width: 40px;
     height: 40px;
@@ -459,9 +463,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 1;
+    padding: 0;
     transition: background 0.3s;
 }
-
 .nav-btn:hover {
     background: rgba(255, 255, 255, 0.2);
 }
@@ -477,9 +482,13 @@ body {
     background: transparent;
     color: white;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    line-height: 1;
+    font-family: system-ui;
+    transform: translateY(-1px);
+    font-size: 18px;
     z-index: 3;
     transition: background 0.3s;
 }
