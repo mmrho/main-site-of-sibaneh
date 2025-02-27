@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
     <title>سیبانه</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./style.css">
@@ -19,7 +21,7 @@
                     <h1 class="brand-name">سیبانه</h1>
                 </a>
                 <div class="search">
-                    <input type="search" class="search-input" placeholder="جستجو در تمام بخش‌های سیبانه ">
+                    <input type="search" class="search-input" placeholder="جستجو در تمام بخش‌های سیبانه " id="search-input">
                 </div>
                 <button class="auth-button">
                     <span class="site-nav-icon">
@@ -138,51 +140,53 @@
             <section class="hero-section">
                 <div class="hero-section-container">
                     <div class="wave-container">
-                        <canvas id="waveCanvas"></canvas>
+                        <canvas id="waveCanvas1"></canvas>
                     </div>
-                    <img src="./assets/images/sibaneh-logo-blue.png" alt="sibaneh-logo" class="logo">
-                    <p>اپ‌استور سیبانه</p>
+                    <a href="#" class="hero-section-logo-container">
+                        <img src="./assets/images/sibaneh-logo-blue.png" alt="sibaneh-logo-blue" class="hero-section-logo">
+                        <p class="hero-section-logo-subtitle">اپ‌استور سیبانه</p>
+                    </a>
                     <h1>استانداردی منحصر بفرد برای آیفون و آیپد در ایران</h1>
-                    <p class="subtitle">دسترسی امن و آسان به هزاران اپلیکیشن اورجینال iOS</p>
-                    <a href="#" class="learn-more">آشنایی با اپ‌استور سیبانه</a>
-                    <img src="./assets/images/main-picture.png" alt="phone-screenshot" class="phone-screenshot">
+                    <p class="hero-section-subtitle">دسترسی امن و آسان به هزاران اپلیکیشن اورجینال iOS</p>
+                    <a href="https://www.apple.com/" class="hero-section-learn-more">آشنایی با اپ‌استور سیبانه</a>
+                    <img src="./assets/images/appstore-main-img.png" alt="appstore-main-img" class="hero-section-img">
                 </div>
             </section>
             <section class="card-section">
-                <div class="card-container">
+                <div class="card-section-container">
                     <div class="row">
                         <div class="col-md-6 my-3">
-                            <div class="info-card">
-                                <div class="info-card-logo">
-                                    <img class="info-card-logo-img" src="./assets/images/sibaneh-logo-blue.png"
-                                        alt="sibaneh-logo-blue">
-                                    <h6>اپ‌استور سیبانه</h6>
+                            <div class="card-section-info">
+                                <div class="card-section-logo-container">
+                                    <img class="card-section-logo" src="./assets/images/sibaneh-logo-blue.png"
+                                        alt="sibaneh-logo">
+                                    <h6 class="card-section-logo-title">اپ‌استور سیبانه</h6>
                                 </div>
-                                <p>امنیت فداشدنی نیست.</p>
-                                <h3>امن‌ترین روش نصب نرم‌افزارهای اورجینال را تجربه کنید.</h3>
-                                <a href="#">بیشتر بدانید</a>
-                                <button class="btn btn-appstore">ورود به اپ‌استور سیبانه</button>
+                                <p class="card-section-subtitle">امنیت فداشدنی نیست.</p>
+                                <h3 class="card-section-title">امن‌ترین روش نصب نرم‌افزارهای اورجینال را تجربه کنید.</h3>
+                                <a href="#" class="card-section-learn-more">بیشتر بدانید</a>
+                                <button class="card-section-btn">ورود به اپ‌استور سیبانه</button>
                                 </button>
-                                <div class="info-card-img-container">
-                                    <img class="info-card-img" src="./assets/images/person-with-iphone.png"
+                                <div class="card-section-img-container">
+                                    <img class="card-section-img" src="./assets/images/person-with-iphone.png"
                                         alt="person-with-iphone">
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 my-3">
-                            <div class="info-card">
-                                <div class="info-card-logo">
-                                    <img class="info-card-logo-img" src="./assets/images/sibaneh-logo-blue.png"
+                            <div class="card-section-info">
+                                <div class="card-section-logo-container">
+                                    <img class="card-section-logo" src="./assets/images/sibaneh-logo-blue.png"
                                         alt="sibaneh-logo-blue">
-                                    <h6>اپ‌استور سیبانه</h6>
+                                    <h6 class="card-section-logo-title">اپ‌استور سیبانه</h6>
                                 </div>
-                                <p>لذت استفاده از امکانات را بچشید.</p>
-                                <h3>محدودیت‌های نرم‌افزاری آیفون را برای ایرانیان شکسته‌ایم.</h3>
-                                <a href="#">بیشتر بدانید</a>
-                                <button class="btn btn-appstore">ورود به اپ‌استور سیبانه</button>
+                                <p class="card-section-subtitle">لذت استفاده از امکانات را بچشید.</p>
+                                <h3 class="card-section-title">محدودیت‌های نرم‌افزاری آیفون را برای ایرانیان شکسته‌ایم.</h3>
+                                <a href="#" class="card-section-learn-more">بیشتر بدانید</a>
+                                <button class="card-section-btn">ورود به اپ‌استور سیبانه</button>
                                 </button>
-                                <div class="info-card-img-container">
-                                    <img class="info-card-img" src="./assets/images/flags.png" alt="flags">
+                                <div class="card-section-img-container">
+                                    <img class="card-section-img" src="./assets/images/flags.png" alt="flags">
                                 </div>
                             </div>
                         </div>
@@ -234,6 +238,127 @@
                         <div class="carousel-track" id="track3"></div>
                     </div>
                 </div>
+                <button class="carousel-section-button">مشاهده همه برنامه‌ها</button>
+            </section>
+            <section class="hero-section pink-background">
+                <div class="hero-section-container">
+                    <div class="wave-container">
+                        <canvas id="waveCanvas2"></canvas>
+                    </div>
+                    <a href="#" class="hero-section-logo-container">
+                        <img src="./assets/images/sibaneh-logo-pink.png" alt="sibaneh-logo-pink" class="hero-section-logo">
+                        <p class="hero-section-logo-subtitle">مک‌استور سیبانه</p>
+                    </a>
+                    <h1>قدرتمندترین مک‌استور ایرانی را هم اکنون تجربه کنید</h1>
+                    <p class="hero-section-subtitle">دسترسی آسان به نرم‌افزارهای مک به همراه آموزش‌های جامع نصب و استفاده</p>
+                    <a href="https://www.apple.com/" class="hero-section-learn-more">آشنایی با مک‌استور سیبانه</a>
+                    <img src="./assets/images/macstore-main-img.png" alt="macstore-main-img" class="hero-section-img">
+                </div>
+            </section>
+            <section class="card-section pink-background">
+                <div class="card-section-container">
+                    <div class="row">
+                        <div class="col-md-6 my-3">
+                            <div class="card-section-info">
+                                <div class="card-section-logo-container">
+                                    <img class="card-section-logo" src="./assets/images/sibaneh-logo-pink.png"
+                                        alt="sibaneh-logo">
+                                    <h6 class="card-section-logo-title">مک‌استور سیبانه</h6>
+                                </div>
+                                <p class="card-section-subtitle">همانند حرفه‌ای‌ها باشید.</p>
+                                <h3 class="card-section-title">حرفه‌ای‌ترین نرم‌افزارها را بر روی مک‌بوک خود داشته باشید.</h3>
+                                <a href="#" class="card-section-learn-more">بیشتر بدانید</a>
+                                <button class="card-section-btn pink">ورود به مک‌استور سیبانه</button>
+                                </button>
+                                <div class="card-section-img-container">
+                                    <img class="card-section-img" src="./assets/images/macstore-icon-1.png"
+                                        alt="macstore-icon-1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <div class="card-section-info">
+                                <div class="card-section-logo-container">
+                                    <img class="card-section-logo" src="./assets/images/sibaneh-logo-pink.png"
+                                        alt="sibaneh-logo-blue">
+                                    <h6 class="card-section-logo-title">مک‌استور سیبانه</h6>
+                                </div>
+                                <p class="card-section-subtitle">جامع‌ترین آموزش‌ها را دریافت کنید.</p>
+                                <h3 class="card-section-title">کامل‌ترین آموزش نصب و استفاده از لب‌تاپ‌های اپل و مک را دریافت کنید.</h3>
+                                <a href="#" class="card-section-learn-more">بیشتر بدانید</a>
+                                <button class="card-section-btn pink">ورود به مک‌استور سیبانه</button>
+                                </button>
+                                <div class="card-section-img-container">
+                                    <img class="card-section-img" src="./assets/images/macstore-icon-2.png" alt="macstore-icon-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="carousel-section pink-background">
+                <div class="carousel-container">
+                    <div class="carousel-row">
+                        <div class="carousel-track" id="track4"></div>
+                    </div>
+                </div>
+                <button class="carousel-section-button pink-button">مشاهده همه برنامه‌ها</button>
+            </section>
+            <section class="hero-section orange-background">
+                <div class="hero-section-container">
+                    <div class="wave-container">
+                        <canvas id="waveCanvas2"></canvas>
+                    </div>
+                    <a href="#" class="hero-section-logo-container">
+                        <img src="./assets/images/sibaneh-logo-orange.png" alt="sibaneh-logo-orange" class="hero-section-logo">
+                        <p class="hero-section-logo-subtitle">سرویس توسعه‌دهندگان</p>
+                    </a>
+                    <h1>به عنوان یک توسعه‌دهنده و برنامه‌نویس هم‌اکنون شروع کنید</h1>
+                    <p class="hero-section-subtitle">بدون محدودیت از اپلیکیشن خود در اپ‌استور اپل و اپ‌استور سیبانه کسب درآمد کنید</p>
+                    <a href="https://www.apple.com/" class="hero-section-learn-more">آشنایی با سرویس توسعه‌دهندگان سیبانه</a>
+                    <img src="./assets/images/dev-main-img.png" alt="dev-main-img" class="hero-section-img">
+                </div>
+            </section>
+            <section class="card-section orange-background">
+                <div class="card-section-container">
+                    <div class="row">
+                        <div class="col-md-6 my-3">
+                            <div class="card-section-info">
+                                <div class="card-section-logo-container">
+                                    <img class="card-section-logo" src="./assets/images/sibaneh-logo-orange.png"
+                                        alt="sibaneh-logo">
+                                    <h6 class="card-section-logo-title">سرویس توسعه‌دهندگان سیبانه</h6>
+                                </div>
+                                <p class="card-section-subtitle">سرویس ساین و انتشار منحصربفرد</p>
+                                <h3 class="card-section-title">پایدارترین پلتفرم انتشار اپلیکیشن را در سیبانه تجربه کنید</h3>
+                                <a href="#" class="card-section-learn-more">بیشتر بدانید</a>
+                                <button class="card-section-btn orange">ورود به توسعه‌دهندگان</button>
+                                </button>
+                                <div class="card-section-img-container">
+                                    <img class="card-section-img" src="./assets/images/dev-icon-1.png"
+                                        alt="macstore-icon-1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <div class="card-section-info">
+                                <div class="card-section-logo-container">
+                                    <img class="card-section-logo" src="./assets/images/sibaneh-logo-orange.png"
+                                        alt="sibaneh-logo-blue">
+                                    <h6 class="card-section-logo-title">سرویس توسعه‌دهندگان سیبانه</h6>
+                                </div>
+                                <p class="card-section-subtitle">امکان کسب درآمد هم‌زمان از اپ‌استور اپل و اپ‌استور سیبانه</p>
+                                <h3 class="card-section-title">انتشار اپلیکیشن شما در اپ‌استور اپل و اپ‌استور سیبانه</h3>
+                                <a href="#" class="card-section-learn-more">بیشتر بدانید</a>
+                                <button class="card-section-btn orange">ورود به توسعه‌دهندگان</button>
+                                </button>
+                                <div class="card-section-img-container">
+                                    <img class="card-section-img" src="./assets/images/dev-icon-2.png" alt="macstore-icon-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="about-section">
                 <div class="about-container">
@@ -268,7 +393,7 @@
                 </div>
             </section>
         </main>
-        
+
         <!-- Footer -->
         <footer class="site-footer">
             <div class="site-footer-container mt-5">
@@ -361,7 +486,7 @@
             </div>
         </footer>
     </div>
-    <script type="module" src="./script.js"></script>
+    <script nonce="random123" type="module" src="./script.js"></script>
 </body>
 
 </html>

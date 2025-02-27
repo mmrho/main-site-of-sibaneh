@@ -1,7 +1,7 @@
 /* javascript */
 
 /* background animation */
-const canvas = document.getElementById("waveCanvas");
+const canvas = document.getElementById("waveCanvas1");
 const ctx = canvas.getContext("2d");
 let animationFrameId;
 let scrollPosition = 0;
@@ -60,6 +60,20 @@ window.addEventListener("scroll", handleScroll);
 
 resizeCanvas();
 animate();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* slider-section js code */
 const slides = document.querySelectorAll(".slide");
@@ -145,6 +159,16 @@ document
       startAutoplay();
     }
   });
+
+
+
+
+
+
+
+
+
+
 
 /* carousel-section js code */
 const games = [
@@ -240,7 +264,8 @@ function animateTrack(track, isReverse = false) {
 const track1 = initializeTrack("track1");
 const track2 = initializeTrack("track2", true);
 const track3 = initializeTrack("track3");
-
+const track4 = initializeTrack("track4", true);
 animateTrack(track1);
 animateTrack(track2, true);
 animateTrack(track3);
+animateTrack(track4,true);
